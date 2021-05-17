@@ -1,0 +1,56 @@
+.o-container-name-description {
+  //   background: chocolate;
+  width: 100%;
+  height: auto;
+  font-size: 16px;
+  color: #ffffff;
+  margin-left: 5rem;
+  overflow: hidden;
+
+  .o-name-description {
+    font-family: "Futura m";
+    font-size: 5.5em;
+    text-transform: capitalize;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    font-weight: normal;
+    text-shadow: 0 10px 30px rgba(2, 11, 22, 0.5);
+    margin-bottom: 1.6rem;
+    animation: slideinLeft 1s;
+    //   margin-left: -2em;
+  }
+  .o-description {
+    font-size: 1.7em;
+    font-family: "Futura r";
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    word-wrap: break-word;
+    white-space: nowrap;
+
+    animation: slideinLeft 1.5s;
+  }
+
+  @keyframes slideinLeft {
+    from {
+      margin-left: -100%;
+      // width: 110%;
+    }
+    to {
+      margin-left: 0%;
+      // width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .o-name-description {
+      font-size: 2.7rem;
+      margin-bottom: 1.1rem;
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  .o-container-name-description {
+    font-size: 8.5px;
+    margin-left: 1rem;
+  }
+}

@@ -1,0 +1,52 @@
+.card1,
+.card2 {
+  position: absolute;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  will-change: transform;
+  //   right: 0;
+}
+.card1 {
+  min-width: 40ch;
+  min-height: 40ch;
+  width: 40vw;
+  height: 40vw;
+  max-width: 100ch;
+  max-height: 100ch;
+  background-image: url(https://image.flaticon.com/icons/svg/119/119596.svg);
+  animation: slideinRight 2.5s;
+}
+
+.card2 {
+  min-width: 5ch;
+  min-height: 5ch;
+  width: 25ch;
+  height: 25ch;
+  background-image: url(../../../../assets/icons/cloud.svg);
+  right: 0;
+  opacity: 0.8;
+  //   margin-right: 2rem;
+  animation: slideinRight 3s;
+}
+
+@keyframes slideinRight {
+  from {
+    margin-right: -50rem;
+    // width: 110%;
+  }
+
+  to {
+    margin-right: 0rem;
+    // width: 100%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .card2 {
+    width: 13ch;
+    height: 13ch;
+    margin-right: 2rem;
+  }
+}

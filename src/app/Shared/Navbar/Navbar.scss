@@ -1,0 +1,68 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  font-size: 20px;
+  color: #ffffff;
+  justify-content: space-between;
+  z-index: 1000;
+  // background: rgb(78, 105, 105);
+  padding-top: 40px;
+
+  .o-name-navbar {
+    font-family: "Futura r";
+    font-size: 1.3em;
+    letter-spacing: 0.1em;
+    margin-left: 3rem;
+    position: relative;
+    z-index: 1000;
+    transition: 0.3s;
+  }
+
+  .o-wrap {
+    display: flex;
+    position: relative;
+    align-items: center;
+    // background: #daa1a1;
+    .o-icons {
+      display: flex;
+      margin-right: 1rem;
+
+      .o-info-navbar {
+        // background: #882b2b;
+        display: block;
+        width: 2rem;
+        margin-right: 2rem;
+        // font-size: 2.4rem;
+        letter-spacing: 0.1em;
+      }
+    }
+
+    .o-menu-navbar {
+      position: relative;
+      margin-right: 3rem;
+      cursor: pointer;
+      //   background: #daa1a1;
+    }
+
+    @media only screen and (max-width: 597px) {
+      .o-icons {
+        display: none;
+      }
+      .o-menu-navbar {
+        margin-right: 1.5rem;
+      }
+    }
+  }
+  @media only screen and (max-width: 597px) {
+    .o-name-navbar {
+      margin-left: 1.5rem;
+      font-size: 1em;
+    }
+    .o-wrap {
+      align-items: flex-end;
+    }
+  }
+}

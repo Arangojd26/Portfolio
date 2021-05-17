@@ -1,0 +1,22 @@
+.stars {
+  position: absolute;
+  //   border-radius: 5px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  will-change: transform;
+
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://awv3node-homepage.surge.sh/build/assets/stars.svg);
+
+  animation: flicker 1.5s ease-in;
+}
+@keyframes flicker {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
