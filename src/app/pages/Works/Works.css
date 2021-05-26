@@ -1,0 +1,72 @@
+.o-container-scroll-projects {
+  /* background-color: rgb(184, 122, 122); */
+  display: flex;
+  justify-content: center;
+  /* width: 90%; */
+}
+.o-container-projects-details {
+  /* background-color: #212c31; */
+  margin-top: 9rem;
+  font-size: 16px;
+  color: #f0f0f0;
+  /* //   margin-left: 3rem; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 9rem);
+  overflow-y: scroll;
+  /* height: 100; */
+}
+.o-container-projects-details::-webkit-scrollbar {
+  width: 8px;
+  height: 0;
+  background: transparent;
+}
+
+.o-container-projects-details::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    1deg,
+    rgb(73, 116, 133) 0%,
+    rgb(128, 212, 251) 94%
+  );
+  border-radius: 4px;
+}
+
+.o-container-projects-details::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    1deg,
+    rgb(73, 116, 133) 0%,
+    rgb(128, 212, 251) 94%
+  );
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.o-container-projects-details::-webkit-scrollbar-thumb:active {
+  background: linear-gradient(
+    1deg,
+    rgb(73, 116, 133) 0%,
+    rgb(128, 212, 251) 94%
+  );
+}
+.o-title-projects {
+  font-family: "Futura m";
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  transition: 0.3s;
+  padding-top: 1rem;
+  margin-bottom: 3rem;
+  /* margin-right: auto; */
+  /* margin-left: 3rem; */
+}
+
+@media only screen and (max-width: 800px) {
+  .o-container-projects-details {
+    font-size: 12.5px;
+  }
+  .o-container-projects-details::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}

@@ -3,7 +3,7 @@ import ButtonShow from "../../../Shared/ButtonShow/ButtonShow.component";
 import ContainerDescription from "../../../Shared/ContainerDescription/ContainerDescription.component";
 import ContainerParallax from "../../Home/ContainerParallax/ContainerParallax.component";
 import Description from "../../Home/Description/Description.component";
-import imgAbout from "../../../../assets/images/about.png";
+import imgAbout from "../../../../assets/images/AboutMe.png";
 import { useSpring, animated } from "react-spring";
 import "./ContainerAbout.scss";
 
@@ -19,7 +19,7 @@ const ContainerAbout = ({ idPage, showPicture }) => {
     loop: { reverse: true },
     config: { duration: 1300 },
     from: { y: 0 },
-    to: { y: 20 },
+    to: { y: 15 },
   });
 
   return (

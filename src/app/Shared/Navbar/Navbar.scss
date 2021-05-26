@@ -9,7 +9,7 @@ header {
   justify-content: space-between;
   z-index: 1000;
   // background: rgb(78, 105, 105);
-  padding-top: 40px;
+  padding-top: 2.5rem;
 
   .o-name-navbar {
     font-family: "Futura r";
@@ -47,7 +47,7 @@ header {
       //   background: #daa1a1;
     }
 
-    @media only screen and (max-width: 597px) {
+    @media only screen and (max-width: 800px) {
       .o-icons {
         display: none;
       }
@@ -56,7 +56,7 @@ header {
       }
     }
   }
-  @media only screen and (max-width: 597px) {
+  @media only screen and (max-width: 800px) {
     .o-name-navbar {
       margin-left: 1.5rem;
       font-size: 1em;

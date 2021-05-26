@@ -4,7 +4,7 @@ import Description from "../Description/Description.component";
 import "./ContainerProfile.scss";
 
 const title = <>DAVID <br /> ARANGO</>;
-const subtitle = <>web developer / <br /> multimedia engineer</>;
+const subtitle = <>multimedia engineer / <br />web developer</>;
 
 const ContainerProfile = ({ idPage, showPicture }) => {
   return (

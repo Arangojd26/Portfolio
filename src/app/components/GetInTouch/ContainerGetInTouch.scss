@@ -1,0 +1,66 @@
+.o-container-image-getintouch {
+  position: absolute;
+  right: 0px;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: opacityFrame 2s;
+
+  .o-img-getintouch {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: -14%;
+  }
+  .o-man-getintouch {
+    position: absolute;
+    width: 6.3%;
+    margin-top: 20em;
+    transform: rotateY(3.142rad);
+    animation: floatingUFO 2.5s ease-out -2s infinite alternate-reverse;
+  }
+
+  @keyframes floatingUFO {
+    from {
+      margin-bottom: 120px;
+      width: 6.3%;
+    }
+    to {
+      margin-bottom: 0px;
+      width: 8%;
+    }
+  }
+  @keyframes opacityFrame {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .o-img-getintouch {
+      position: relative;
+      margin-top: -8rem;
+      width: 100%;
+      //   margin-bottom: 0%;
+      // -webkit-box-reflect: below 0px
+      //   linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.35));
+      -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left
+            bottom, from(transparent), color-stop(0.7, transparent), to(rgba(0, 0, 0, 0.7)));
+    }
+    .o-man-getintouch {
+      margin-top: -2em;
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  .o-container-image-getintouch {
+    width: 100%;
+    justify-content: center;
+  }
+}

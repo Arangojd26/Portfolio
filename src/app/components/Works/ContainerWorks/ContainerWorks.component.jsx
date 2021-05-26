@@ -3,7 +3,7 @@ import ContainerDescription from "../../../Shared/ContainerDescription/Container
 import ContainerParallax from "../../Home/ContainerParallax/ContainerParallax.component";
 import Description from "../../Home/Description/Description.component";
 import ButtonShow from "../../../Shared/ButtonShow/ButtonShow.component";
-import imgProjects from "../../../../assets/images/projects.png";
+import imgProjects from "../../../../assets/images/Projects2.png";
 import "./ContainerWorks.scss";
 
 const title = "Projects";

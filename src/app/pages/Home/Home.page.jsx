@@ -5,6 +5,7 @@ import Navbar from "../../Shared/Navbar/Navbar.component";
 import ContainerWorks from "../../components/Works/ContainerWorks/ContainerWorks.component";
 import { controlsProps } from "../../consts/fullpage";
 import ContainerAbout from "../../components/About/ContainerAbout/ContainerAbout.component";
+import ContainerGetInTouch from "../../components/GetInTouch/ContainerGetInTouch.component";
 
 const Home = () => {
   const [visibleSlide, setVisibleSlide] = React.useState(0);
@@ -55,6 +56,9 @@ const Home = () => {
         </Slide>
         <Slide style={{ background: "#253237", display: "flex" }}>
           <ContainerAbout idPage={visibleSlide} showPicture={picture} />;
+        </Slide>
+        <Slide style={{ background: "#253237", display: "flex" }}>
+          <ContainerGetInTouch idPage={visibleSlide} showPicture={picture} />
         </Slide>
       </FullPage>
     </>
