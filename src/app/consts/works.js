@@ -1,5 +1,6 @@
 import imgProject1 from "../../assets/images/lowbeat.jpg";
 import imgProject2 from "../../assets/images/cheeseRescue.jpg";
+import imgProject3 from "../../assets/images/liliapp.jpg";
 
 const project_1 = {
   title: "Lowbeat",
@@ -15,6 +16,7 @@ const project_1 = {
   descriptionCard: "HTML CSS FIREBASE REDUX BOOTSTRAP 4",
   url: "https://lowbeat-12107.web.app/",
   imgCard: imgProject1,
+  color: "#00d9ff",
 };
 
 const project_2 = {
@@ -31,6 +33,24 @@ const project_2 = {
   descriptionCard: "HTML SASS BOOTSTRAP 4",
   url: "https://cheese-rescue.netlify.app/",
   imgCard: imgProject2,
+  color: "#f1f1f1",
 };
 
-export { project_1, project_2 };
+const project_3 = {
+  title: "Lilí App",
+  siteProject: "Lili-App-site",
+  codeProject: "Lili-App-code",
+  description:
+    "Multimedia experience for the lili museum of the autonomous university of the west. For the development of this activity, visitors must scan the pieces with the QR code.",
+  spanCard: (
+    <>
+      <span>Javascript</span>
+    </>
+  ),
+  descriptionCard: "HTML CSS TWITTER-API NODEJS EXPRESS",
+  url: "https://www.youtube.com/watch?v=eXPijCKS0Ac",
+  imgCard: imgProject3,
+  color: "#272727",
+};
+
+export { project_1, project_2, project_3 };

@@ -1,0 +1,37 @@
+.o-back-arrow {
+  position: fixed;
+  top: 8rem;
+  left: 3rem;
+  display: block;
+  width: 4em;
+  transition: 0.5s;
+  overflow: hidden;
+  color: #fff;
+  z-index: 300;
+  cursor: pointer;
+  outline: none;
+}
+.o-back-arrow g {
+  stroke: currentColor;
+  animation: opacityFrame 2s;
+}
+.o-back-arrow:hover {
+  -webkit-transform: translate3d(-15%, 0, 0);
+  transform: translate3d(-15%, 0, 0);
+}
+
+/* @keyframes slideinTop {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+} */
+@media only screen and (max-width: 800px) {
+  .o-back-arrow {
+    left: 1.5rem;
+    width: 3em;
+    top: 5.2rem;
+  }
+}

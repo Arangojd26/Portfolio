@@ -21,26 +21,32 @@
   line-height: 1.2;
   text-align: left;
   font-family: "Futura r";
+  overflow: hidden;
 }
 .o-description-project-detail h2 {
   margin: 0;
   margin-top: 2em;
   margin-bottom: 0em;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.1em;
   font-family: "Futura m";
+  animation: slideinLeft 0.5s;
 }
 .o-description-project-detail p {
   font-family: "YuGothic";
   word-wrap: break-word;
   white-space: normal;
   line-height: 2;
+  animation: opacityFrame 1s;
 }
 
 .o-container-btn-project {
+  /* background: #f1f1f1; */
   margin-top: 1rem;
   display: flex;
   justify-content: flex-start;
   font-size: 1em;
+  /* transform: translateY(0%); */
+  animation: slideinBottom 0.7s;
 }
 .o-container-btn-project a {
   display: inline-block;
@@ -52,20 +58,20 @@
   transition: 0.3s;
   letter-spacing: 0.1em;
   text-decoration: none;
+  
 }
-.o-container-btn-project a.o-btn-site {
-  background: #3e95e7;
-  margin-right: 1rem;
+
+@keyframes slideinBottom {
+  from {
+    margin-bottom: -7rem;
+    /* width: 110%; */
+  }
+  to {
+    margin-bottom: 0rem;
+    /* width: 100%; */
+  }
 }
-.o-container-btn-project a.o-btn-code {
-  background: transparent;
-  border: 2px #3e95e7 solid;
-}
-.o-container-btn-project a:hover {
-  -webkit-transform: translate3d(0, -5%, 0);
-  transform: translate3d(0, -5%, 0);
-  opacity: 1;
-}
+
 .o-container-image-project {
   /* background-color: rgb(133, 76, 6); */
   width: 45%;
@@ -194,13 +200,13 @@ figure.effect-sadie h2 {
   -webkit-transform: translate3d(0, -50%, 0);
   transform: translate3d(0, -50%, 0);
 }
-figure.effect-sadie h2.o-span-low {
-  color: #00d9ff;
+/* figure.effect-sadie h2.o-span-low {
+  color: #272727;
 }
 figure.effect-sadie h2.o-span-cheese {
   color: #f1f1f1;
   stroke: 1px;
-}
+} */
 
 figure.effect-sadie figcaption::before,
 figure.effect-sadie p {

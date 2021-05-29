@@ -1,0 +1,13 @@
+.o-container-btn-project a.o-btn-site {
+  background: #3e95e7;
+  margin-right: 1rem;
+}
+.o-container-btn-project a.o-btn-code {
+  background: transparent;
+  border: 2px #3e95e7 solid;
+}
+.o-container-btn-project a:hover {
+  -webkit-transform: translate3d(0, -5%, 0);
+  transform: translate3d(0, -5%, 0);
+  opacity: 1;
+}
