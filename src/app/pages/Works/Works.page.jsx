@@ -10,7 +10,7 @@ const Works = () => {
     <>
       <Navbar />
       <BackArrow />
-      <div className="o-container-scroll-projects">
+      <div className="o-container-scroll">
         <div className="o-container-projects-details">
           {/* <div className="o-title-projects">Projects</div> */}
           <WorkDetail dataWork={project_1} />

@@ -109,6 +109,7 @@
   max-width: 100%;
   opacity: 0.8;
   border-radius: 12px;
+  animation: opacityFrame 2.8s;
 }
 
 .grid figure figcaption {
@@ -249,7 +250,7 @@ figure.effect-sadie:hover p {
     width: 90%;
     flex-direction: column-reverse;
     align-items: center;
-    margin-bottom: 3.7em;
+    margin-bottom: 3.9em;
   }
   .o-container-btn-project {
     margin-top: 0.5rem;

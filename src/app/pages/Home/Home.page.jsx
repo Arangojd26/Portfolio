@@ -10,35 +10,6 @@ import ContainerGetInTouch from "../../components/GetInTouch/ContainerGetInTouch
 const Home = () => {
   const [visibleSlide, setVisibleSlide] = React.useState(0);
   const [picture, setPicture] = React.useState(0);
-  //   const [loadedContent, setLoadedContent] = React.useState(0);
-
-  //   React.useEffect(() => {
-  //     let timer = setTimeout(() => setLoadedContent(visibleSlide), 350);
-  //     // console.log(visibleSlide);
-  //     return () => {
-  //       clearTimeout(timer);
-  //     };
-  //   }, [visibleSlide]);
-
-  //   const renderPerPage = () => {
-  //     switch (visibleSlide) {
-  //       case 0:
-  //         if (loadedContent === 0) {
-  //           return <ContainerProfile idPage={visibleSlide} />;
-  //         } else {
-  //           break;
-  //         }
-
-  //       case 1:
-  //         if (loadedContent === 1) {
-  //           return <ContainerWorks />;
-  //         } else {
-  //           break;
-  //         }
-  //       default:
-  //         break;
-  //     }
-  //   };
 
   return (
     <>

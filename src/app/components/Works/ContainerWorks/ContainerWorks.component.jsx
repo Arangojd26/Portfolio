@@ -15,7 +15,7 @@ const ContainerWorks = ({ idPage, showPicture }) => {
       {idPage === 1 && (
         <ContainerDescription>
           <Description title={title} subtitle={subtitle} />
-          <ButtonShow />
+          <ButtonShow category={"works"} />
         </ContainerDescription>
       )}
       <div className="o-container-image-profile">
