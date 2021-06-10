@@ -58,9 +58,32 @@
     }
   }
 }
+
+.o-icons-getintouch {
+  // background-color: rgb(163, 102, 27);
+  display: flex;
+  width: auto;
+  height: auto;
+  margin-right: auto;
+  margin-left: 2.5rem;
+  overflow: hidden;
+  margin-top: 1.5rem;
+}
+.o-icons-getintouch img:first-child {
+  margin-right: 1.3rem;
+  
+}
+.o-info-get {
+  display: block;
+  width: 2rem;
+  animation: opacityFrame 2s;
+}
 @media only screen and (max-width: 800px) {
   .o-container-image-getintouch {
     width: 100%;
     justify-content: center;
+  }
+  .o-icons-getintouch {
+    margin-left: 0.5rem;
   }
 }

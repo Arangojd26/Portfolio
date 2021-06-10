@@ -1,0 +1,52 @@
+.o-scrollDown {
+  position: fixed;
+  font-family: "Futura r";
+  font-size: 0.9rem;
+  bottom: 40px;
+  left: 40px;
+  line-height: 0;
+  letter-spacing: 0.3em;
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  color: #fff;
+  z-index: 100;
+  word-wrap: break-word;
+  white-space: normal;
+  animation: SlideUP 0.6s ease-in-out;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+.o-scrollDown::after {
+  content: "";
+  width: 2px;
+  height: 70px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: -80px;
+}
+@keyframes SlideUP {
+  from {
+    margin-bottom: -100%;
+  }
+  to {
+    margin-bottom: 0px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .o-scrollDown {
+    left: auto;
+    right: 6.25%;
+    font-size: 0.6rem;
+    bottom: 40px;
+  }
+  .o-scrollDown::after {
+    height: 32px;
+    bottom: -40px;
+  }
+}

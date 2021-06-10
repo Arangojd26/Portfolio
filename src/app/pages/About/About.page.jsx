@@ -9,16 +9,17 @@ import iconHtml from "../../../assets/icons/html-5.svg";
 import iconCss from "../../../assets/icons/css3.svg";
 import iconBS from "../../../assets/icons/bootstrap.svg";
 import iconGit from "../../../assets/icons/git.svg";
-import "./About.css";
+import iconJavascript from "../../../assets/icons/javascript.svg";
 import CardSkills from "../../components/About/CardSkills/CardSkills.component";
+import "./About.css";
 
 const About = () => {
   return (
     <>
       <Navbar />
-      <BackArrow />
       <div className="o-container-scroll">
         <div className="o-container-about-details">
+          <BackArrow type={"about"} />
           <div className="o-content-about-details">
             <div className="o-who-left">
               <div className="o-content-num">
@@ -38,9 +39,8 @@ const About = () => {
                   reel, I am passionate about the deployment of Multimedia
                   Systems that offer value, always with a user-centered design.
                   <br />
-                  <br />I characterize myself for being a person with analytical
-                  skills and always attentive to the multiple development trends
-                  in technology.
+                  <br />I have two years of experience working with javascript
+                  and 1 years with ReactJS
                 </p>
                 <div className="o-who-video">
                   <div className="video-responsive">
@@ -77,10 +77,20 @@ const About = () => {
                   <CardSkills imgCard={iconCss} title={"CSS 3"} />
                   <CardSkills imgCard={iconBS} title={"Bootstrap"} />
                   <CardSkills imgCard={iconGit} title={"GIT"} />
+                  <CardSkills imgCard={iconJavascript} title={"Javascript"} />
                 </div>
               </div>
             </div>
           </div>
+          <footer className="o-footer">
+            <a href="mailto:kuon609@gmail.com">arangojd26@gmail.com</a>
+            <a
+              href="https://www.linkedin.com/in/juan-david-arango-rodr%C3%ADguez-9a769419a"
+              target="_balnk"
+            >
+              Linkedin
+            </a>
+          </footer>
         </div>
       </div>
     </>

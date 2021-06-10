@@ -3,8 +3,20 @@ import "./BackArrow.css";
 import { withRouter } from "react-router-dom";
 
 const BackArrow = (props) => {
+  const backPage = () => {
+    props.history.push("/");
+
+    setTimeout(() => {
+      if (props.type === "works") {
+        localStorage.setItem("indexSlide", JSON.stringify(1));
+      } else {
+        localStorage.setItem("indexSlide", JSON.stringify(2));
+      }
+    }, 800);
+  };
+
   return (
-    <div className="o-back-arrow" onClick={() => props.history.push("/")}>
+    <div className="o-back-arrow" onClick={() => backPage()}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="100%"

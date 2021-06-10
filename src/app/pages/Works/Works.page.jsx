@@ -9,10 +9,10 @@ const Works = () => {
   return (
     <>
       <Navbar />
-      <BackArrow />
+
       <div className="o-container-scroll">
         <div className="o-container-projects-details">
-          {/* <div className="o-title-projects">Projects</div> */}
+          <BackArrow type={"works"} />
           <WorkDetail dataWork={project_1} />
           <WorkDetail dataWork={project_2} />
           <WorkDetail dataWork={project_3} />

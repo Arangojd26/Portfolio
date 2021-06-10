@@ -1,15 +1,17 @@
 .o-back-arrow {
-  position: fixed;
-  top: 8rem;
-  left: 3rem;
+  /* position: relative; */
+  /* top: 8rem; */
+  /* left: 3rem; */
   display: block;
   width: 4em;
   transition: 0.5s;
-  overflow: hidden;
+  /* overflow: hidden; */
   color: #fff;
-  z-index: 300;
+  margin-left: 3rem;
+  /* z-index: 300; */
   cursor: pointer;
   outline: none;
+  margin-right: auto;
 }
 .o-back-arrow g {
   stroke: currentColor;
@@ -20,18 +22,14 @@
   transform: translate3d(-15%, 0, 0);
 }
 
-/* @keyframes slideinTop {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-} */
 @media only screen and (max-width: 800px) {
   .o-back-arrow {
-    left: 1.5rem;
+    /* left: 1.5rem;
     width: 3em;
-    top: 5.2rem;
+    top: 5.2rem; */
+    width: 3em;
+    margin-left: 1.75rem;
+    /* padding-top: 1.2rem; */
+    /* padding-bottom: 1.2rem; */
   }
 }

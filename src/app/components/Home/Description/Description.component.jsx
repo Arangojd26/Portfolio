@@ -1,5 +1,5 @@
 import React from "react";
-import { animated } from "react-spring";
+
 import "./Description.scss";
 
 const Description = (props) => {
@@ -19,8 +19,8 @@ const Description = (props) => {
 
   return (
     <div className="o-container-name-description">
-      <animated.div className="o-name-description">{props.title}</animated.div>
-      <animated.div className="o-description">{props.subtitle}</animated.div>
+      <div className="o-name-description">{props.title}</div>
+      <div className="o-description">{props.subtitle}</div>
     </div>
   );
 };

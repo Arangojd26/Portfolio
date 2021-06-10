@@ -1,16 +1,21 @@
 .o-container-about-details {
+
+  /* position: fixed;
+  top: 0;
+  left: 0; */
+  
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
-  height: calc(100vh - 9rem);
-  margin-top: 9rem;
+  height: calc(100vh - 8rem);
+  margin-top: 8rem;
+  /* margin-top: 0rem; */
   width: 100%;
+  /* background-color: #209ed8; */
+  
 }
 .o-content-about-details {
   display: flex;
-  /* margin-top: 9rem; */
-  /* height: calc(100vh - 9rem); */
-  /* overflow-y: scroll; */
   font-size: 16px;
   color: #f0f0f0;
   /* background-color: #209ed8; */
@@ -170,6 +175,31 @@
   grid-template-columns: repeat(auto-fit, minmax(112px, 1fr));
 }
 
+.o-footer {
+  width: 100%;
+  padding: 7em 0;
+  text-align: center;
+  background-image: linear-gradient(101deg, #19425a, #3292ca 52%, #62c6ff);
+  position: relative;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  font-size: 16px;
+}
+.o-footer a {
+  display: block;
+  font-size: 1.5em;
+  line-height: 1.3;
+  color: #fff;
+  letter-spacing: 0.2em;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.o-footer a:first-child {
+  margin-bottom: 2.5rem;
+}
+
 @media only screen and (max-width: 800px) {
   .o-content-about-details {
     flex-direction: column;
@@ -183,7 +213,7 @@
     width: 100%;
   }
   .o-content-num {
-    margin-top: 1rem;
+    margin-top: 2.6rem;
   }
   .heading-num {
     /* font-size: 2rem; */
@@ -196,9 +226,17 @@
   .o-content-who {
     font-size: 12px;
   }
+  .o-container-about-details {
+    height: calc(100vh - 9rem);
+    margin-top: 9rem;
+    /* padding-top: 4rem; */
+  }
   .o-container-about-details::-webkit-scrollbar {
     display: none;
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
+  }
+  .o-footer {
+    font-size: 10px;
   }
 }
