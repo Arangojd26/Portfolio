@@ -1,15 +1,17 @@
 import React from "react";
 import { FullPage, Slide } from "react-full-page";
 import ContainerProfile from "../../components/Home/ContainerProfile/ContainerProfile.component";
-import Navbar from "../../Shared/Navbar/Navbar.component";
 import ContainerWorks from "../../components/Works/ContainerWorks/ContainerWorks.component";
 import { controlsProps } from "../../consts/fullpage";
 import ContainerAbout from "../../components/About/ContainerAbout/ContainerAbout.component";
 import ContainerGetInTouch from "../../components/GetInTouch/ContainerGetInTouch.component";
 import ScrollDown from "../../Shared/ScrollDown/ScrollDown.component";
 import PropTypes from "prop-types";
+import { NavbarContext } from "../../context/NavbarProvider";
 
 const CustomControls = (props) => {
+  const { scroll, setScroll } = React.useContext(NavbarContext);
+
   CustomControls.propTypes = {
     name: PropTypes.string,
     onNext: PropTypes.func.isRequired,
@@ -24,37 +26,39 @@ const CustomControls = (props) => {
   const { scrollToSlide } = props;
 
   React.useEffect(() => {
-    let timer = setTimeout(() => scrollToSlide(JSON.parse(localStorage.getItem("indexSlide"))), 800);
+    // console.log(scroll);
+    let timer = setTimeout(() => scrollToSlide(scroll), 0);
     return () => {
       clearTimeout(timer);
     };
-  }, [scrollToSlide]);
+  }, [scrollToSlide, scroll]);
 
   return (
     <ScrollDown
       onNext={props.onNext}
-      scrollToSlide={scrollToSlide}
+      scrollToSlide={setScroll}
       getCurrentSlideIndex={props.getCurrentSlideIndex}
     />
   );
 };
 
 const Home = () => {
+  const { setScroll } = React.useContext(NavbarContext);
   const [visibleSlide, setVisibleSlide] = React.useState(0);
   const [picture, setPicture] = React.useState(0);
 
-  // React.useEffect(() => {
-  //   localStorage.setItem("indexSlide", 0);
-  // }, [picture]);
+  const handleChange = (index) => {
+    setPicture(index);
+    setScroll(index)
+  };
 
   return (
     <>
-      <Navbar />
       <FullPage
         controls={CustomControls}
         controlsProps={controlsProps}
         afterChange={(e) => setVisibleSlide(e.to)}
-        beforeChange={(e) => setPicture(e.to)}
+        beforeChange={(e) => handleChange(e.to)}
       >
         <Slide style={{ background: "#253237", display: "flex" }}>
           <ContainerProfile idPage={visibleSlide} showPicture={picture} />
@@ -69,7 +73,6 @@ const Home = () => {
           <ContainerGetInTouch idPage={visibleSlide} showPicture={picture} />
         </Slide>
       </FullPage>
-      {/* {visibleSlide !== 3 && <ScrollDown onNext={props.onNext} />} */}
     </>
   );
 };

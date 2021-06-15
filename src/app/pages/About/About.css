@@ -89,6 +89,7 @@
   margin-top: 5rem;
   font-family: "Futura m";
   line-height: 0;
+  animation: slideinLeft 1s;
 }
 
 .heading-num {
@@ -167,6 +168,7 @@
   height: 100%;
   width: 100%;
   position: absolute;
+  animation: opacityFrame 3s;
 }
 
 .o-who-skill-grid {

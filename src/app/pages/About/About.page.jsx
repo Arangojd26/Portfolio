@@ -1,6 +1,5 @@
 import React from "react";
 import BackArrow from "../../Shared/BackArrow/BackArrow.component";
-import Navbar from "../../Shared/Navbar/Navbar.component";
 import reel from "../../../assets/videos/reel-v1.mp4";
 import preview from "../../../assets/images/preview2.jpg";
 import iconReact from "../../../assets/icons/react.svg";
@@ -16,7 +15,6 @@ import "./About.css";
 const About = () => {
   return (
     <>
-      <Navbar />
       <div className="o-container-scroll">
         <div className="o-container-about-details">
           <BackArrow type={"about"} />

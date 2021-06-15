@@ -1,18 +1,24 @@
 import React from "react";
 import "./BackArrow.css";
 import { withRouter } from "react-router-dom";
+import { NavbarContext } from "../../context/NavbarProvider";
 
 const BackArrow = (props) => {
+
+  const { setScroll } = React.useContext(NavbarContext);
+
   const backPage = () => {
     props.history.push("/");
 
     setTimeout(() => {
       if (props.type === "works") {
         localStorage.setItem("indexSlide", JSON.stringify(1));
+        setScroll(1)
       } else {
         localStorage.setItem("indexSlide", JSON.stringify(2));
+        setScroll(2)
       }
-    }, 800);
+    }, 960);
   };
 
   return (

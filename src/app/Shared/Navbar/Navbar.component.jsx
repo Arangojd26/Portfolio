@@ -2,11 +2,26 @@ import React from "react";
 import "./Navbar.scss";
 import iconLinkedin from "../../../assets/icons/linkedin.svg";
 import iconWhatsapp from "../../../assets/icons/whatsapp.svg";
+import { withRouter } from "react-router-dom";
+import Menu from "./Menu/Menu.component";
+import { NavbarContext } from "../../context/NavbarProvider";
 
-const Navbar = () => {
+const Navbar = (props) => {
+  const { setScroll } = React.useContext(NavbarContext);
+
+  const [showMenu, setShowMenu] = React.useState(true);
+
+  const goHome = () => {
+    props.history.push("/");
+    localStorage.setItem("indexSlide", JSON.stringify(0));
+    setScroll(0);
+  };
+
   return (
     <header className="o-container-navbar">
-      <div className="o-name-navbar">David Arango</div>
+      <div className="o-name-navbar" onClick={() => goHome()}>
+        David Arango
+      </div>
       <div className="o-wrap">
         <div className="o-icons">
           <a
@@ -17,10 +32,14 @@ const Navbar = () => {
           </a>
           <img className="o-info-navbar" src={iconWhatsapp} alt="whatsapp" />
         </div>
-        <div className="o-menu-navbar">Menu</div>
+        <div className="o-menu-navbar">
+          {showMenu ? (
+            <Menu setShowMenu={setShowMenu} />
+          ) : null}
+        </div>
       </div>
     </header>
   );
 };
 
-export default Navbar;
+export default withRouter(Navbar);

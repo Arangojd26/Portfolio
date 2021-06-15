@@ -19,12 +19,20 @@ header {
     position: relative;
     z-index: 1000;
     transition: 0.3s;
+    cursor: pointer;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .o-name-navbar:hover {
+    opacity: 0.7;
   }
 
   .o-wrap {
     display: flex;
     position: relative;
-    align-items: center;
+    // top: 0;
     // background: #daa1a1;
     .o-icons {
       display: flex;
@@ -41,10 +49,12 @@ header {
     }
 
     .o-menu-navbar {
-      position: relative;
-      margin-right: 3rem;
-      cursor: pointer;
-      //   background: #daa1a1;
+      // position: relative;
+      margin-right: 1.5rem;
+      // cursor: pointer;
+      margin-left: 2.5rem;
+
+      // background: #daa1a1;
     }
 
     @media only screen and (max-width: 800px) {
@@ -52,7 +62,8 @@ header {
         display: none;
       }
       .o-menu-navbar {
-        margin-right: 1.5rem;
+        margin-right: 1rem;
+        // margin-bottom: 2.5rem;
       }
     }
   }

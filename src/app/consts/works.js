@@ -30,7 +30,7 @@ const project_2 = {
       <span>React</span>JS
     </>
   ),
-  descriptionCard: "HTML SASS BOOTSTRAP 4",
+  descriptionCard: "HTML SASS BOOTSTRAP 4 CONTEXT-API",
   url: "https://cheese-rescue.netlify.app/",
   imgCard: imgProject2,
   color: "#f1f1f1",
