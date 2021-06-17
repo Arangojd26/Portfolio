@@ -1,5 +1,6 @@
 .card1,
-.card2 {
+.card2,
+.card3 {
   position: absolute;
   border-radius: 5px;
   background-size: cover;
@@ -8,26 +9,40 @@
   will-change: transform;
   //   right: 0;
 }
+
 .card1 {
-  min-width: 40ch;
-  min-height: 40ch;
+  min-width: 37ch;
+  min-height: 37ch;
   width: 40vw;
   height: 40vw;
   max-width: 100ch;
   max-height: 100ch;
-  background-image: url(https://image.flaticon.com/icons/svg/119/119596.svg);
+  // background-image: url(https://image.flaticon.com/icons/svg/119/119596.svg);
+  background-image: url(../../../../assets/images/cv3.png);
   animation: slideinRight 2.5s;
 }
 
 .card2 {
   min-width: 5ch;
   min-height: 5ch;
-  width: 25ch;
-  height: 25ch;
-  background-image: url(../../../../assets/icons/cloud.svg);
+  width: 23ch;
+  height: 23ch;
+  background-image: url(https://image.flaticon.com/icons/svg/414/414927.svg);
   right: 0;
-  opacity: 0.8;
+  opacity: 0.9;
   //   margin-right: 2rem;
+  animation: slideinRight 3s;
+}
+.card3 {
+  min-width: 5ch;
+  min-height: 5ch;
+  width: 23ch;
+  height: 23ch;
+  background-image: url(https://image.flaticon.com/icons/svg/414/414927.svg);
+  right: 15%;
+  opacity: 0.9;
+  // margin-right: 15%;
+  margin-top: 12rem;
   animation: slideinRight 3s;
 }
 
@@ -47,6 +62,12 @@
   .card2 {
     width: 13ch;
     height: 13ch;
-    margin-right: 2rem;
+    right: 2%;
+    margin-top: 3rem;
+  }
+  .card3 {
+    width: 13ch;
+    height: 13ch;
+    right: 0%;
   }
 }

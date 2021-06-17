@@ -12,7 +12,7 @@ import "./ContainerGetInTouch.scss";
 const title = "Get In Touch";
 const subtitle = (
   <>
-    <a href="mailto:kuon609@gmail.com">arangojd26@gmail.com</a>
+    <a href="mailto:davidarango.ro@gmail.com">davidarango.ro@gmail.com</a>
   </>
 );
 
@@ -26,7 +26,9 @@ const ContainerGetInTouch = ({ idPage, showPicture }) => {
             <a href="https://www.linkedin.com/in/juan-david-arango-rodr%C3%ADguez-9a769419a" target="_balnk">
               <img className="o-info-get" src={iconLinkedin} alt="linkedin" />
             </a>
-            <img className="o-info-get" src={iconWhatsapp} alt="whatsapp" />
+            <a href="https://wa.me/573178822924" target="_balnk">
+              <img className="o-info-get" src={iconWhatsapp} alt="whatsapp" />
+            </a>
           </div>
         </ContainerDescription>
       )}

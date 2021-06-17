@@ -81,7 +81,7 @@ const About = () => {
             </div>
           </div>
           <footer className="o-footer">
-            <a href="mailto:kuon609@gmail.com">arangojd26@gmail.com</a>
+            <a href="mailto:davidarango.ro@gmail.com">davidarango.ro@gmail.com</a>
             <a
               href="https://www.linkedin.com/in/juan-david-arango-rodr%C3%ADguez-9a769419a"
               target="_balnk"

@@ -49,7 +49,7 @@ const Home = () => {
 
   const handleChange = (index) => {
     setPicture(index);
-    setScroll(index)
+    setScroll(index);
   };
 
   return (

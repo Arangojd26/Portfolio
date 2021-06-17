@@ -30,12 +30,12 @@ const Navbar = (props) => {
           >
             <img className="o-info-navbar" src={iconLinkedin} alt="linkedin" />
           </a>
-          <img className="o-info-navbar" src={iconWhatsapp} alt="whatsapp" />
+          <a href="https://wa.me/573178822924" target="_balnk">
+            <img className="o-info-navbar" src={iconWhatsapp} alt="whatsapp" />
+          </a>
         </div>
         <div className="o-menu-navbar">
-          {showMenu ? (
-            <Menu setShowMenu={setShowMenu} />
-          ) : null}
+          {showMenu ? <Menu setShowMenu={setShowMenu} /> : null}
         </div>
       </div>
     </header>
