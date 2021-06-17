@@ -49,7 +49,7 @@ const About = () => {
                       autoPlay={false}
                       type="video/mp4"
                       controls
-                      preload={"preload"}
+                      // preload={"preload"}
                       poster={preview}
                     />
                   </div>
