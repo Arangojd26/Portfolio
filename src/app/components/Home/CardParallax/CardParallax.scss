@@ -11,15 +11,19 @@
 }
 
 .card1 {
-  min-width: 37ch;
-  min-height: 37ch;
-  width: 40vw;
-  height: 40vw;
-  max-width: 100ch;
-  max-height: 100ch;
+  // min-width: 37ch;
+  // min-height: 37ch;
+  width: 100vw;
+  height: 100%;
+  // right: 0;
+  // bottom: 0;
+  // height: 100%;
+  // width: 100%;
+  // max-width: 110ch;
+  // max-height: 110ch;
   // background-image: url(https://image.flaticon.com/icons/svg/119/119596.svg);
-  background-image: url(../../../../assets/images/cv4.png);
-  animation: slideinRight 2.5s;
+  background-image: url(../../../../assets/images/bg-home-desktop.png);
+  animation: opacityIn 2.5s;
 }
 
 .card2 {
@@ -31,7 +35,7 @@
   right: 0;
   opacity: 0.9;
   //   margin-right: 2rem;
-  animation: slideinRight 3s;
+  animation: opacityIn 3s;
 }
 .card3 {
   min-width: 5ch;
@@ -43,22 +47,27 @@
   opacity: 0.9;
   // margin-right: 15%;
   margin-top: 12rem;
-  animation: slideinRight 3s;
+  animation: opacityIn 3s;
 }
 
-@keyframes slideinRight {
+@keyframes opacityIn {
   from {
-    margin-right: -50rem;
+    opacity: 0;
     // width: 110%;
   }
 
   to {
-    margin-right: 0rem;
+    opacity: 1;
     // width: 100%;
   }
 }
 
 @media only screen and (max-width: 800px) {
+  .card1 {
+    background-image: url(../../../../assets/images/bg-home-mobile.png);
+    width: 100%;
+    height: 100%;
+  }
   .card2 {
     width: 13ch;
     height: 13ch;

@@ -2,7 +2,7 @@ import React from "react";
 import { animated } from "react-spring";
 import "./StarsParallax.scss";
 
-const transformStars = (x, y) => `translate3d(${x / 40}px,${y / 40}px,0)`;
+const transformStars = (x, y) => `translate3d(${x / 20}px,${y / 20}px,0)`;
 
 const StarsParallax = ({ props }) => {
 

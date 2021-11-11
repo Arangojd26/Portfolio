@@ -10,13 +10,19 @@
   height: 100vh;
   background-image: url(https://awv3node-homepage.surge.sh/build/assets/stars.svg);
 
-  animation: flicker 1.5s ease-in;
+  animation: flicker 2.7s infinite;
 }
 @keyframes flicker {
-  from {
+  0% {
     opacity: 0;
   }
-  to {
+  50% {
     opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
