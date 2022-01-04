@@ -5,7 +5,7 @@ const CardSkills = ({ imgCard, title }) => {
   return (
     <div className="o-content-skill">
       <div className="o-card-skill">
-        <img src={imgCard} alt="card" style={{ width: "70%" }} />
+        <img src={imgCard} alt="card" style={{ width: "100%" }} />
       </div>
       <p>{title}</p>
     </div>
