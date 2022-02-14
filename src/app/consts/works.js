@@ -1,8 +1,26 @@
+import imgProject0 from "../../assets/images/glommy.jpg";
 import imgProject1 from "../../assets/images/lowbeat.jpg";
 import imgProject2 from "../../assets/images/cheeseRescue.jpg";
 import imgProject3 from "../../assets/images/liliapp.jpg";
 
 const project_1 = {
+  title: "Glommy",
+  siteProject: "Glommy-site",
+  codeProject: "Glommy-code",
+  description:
+    "Application to know the weather, temperature, humidity and wind speed in cities around the world.",
+  spanCard: (
+    <>
+      <span>Next</span>JS
+    </>
+  ),
+  descriptionCard: "HTML SASS SWR API-REST CUSTOM-HOOKS",
+  url: "https://glommy.vercel.app/",
+  imgCard: imgProject0,
+  color: "#000",
+};
+
+const project_0 = {
   title: "Lowbeat",
   siteProject: "Lowbeat-site",
   codeProject: "Lowbeat-code",
@@ -53,4 +71,4 @@ const project_3 = {
   color: "#272727",
 };
 
-export { project_1, project_2, project_3 };
+export { project_0, project_1, project_2, project_3 };
