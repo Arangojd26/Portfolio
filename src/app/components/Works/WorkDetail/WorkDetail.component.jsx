@@ -3,7 +3,7 @@ import ButtonProject from "../ButtonProject/ButtonProject.component";
 import "./WorkDetail.css";
 
 const WorkDetail = ({ dataWork }) => {
-  const [Colour, setColour] = React.useState(dataWork.color);
+  const [colour, setColour] = React.useState(dataWork.color);
   return (
     <div
       className="o-content-project"
@@ -24,15 +24,15 @@ const WorkDetail = ({ dataWork }) => {
           <figure
             className="effect-sadie"
             onMouseEnter={() => {
-              setColour("#fff");
+              setColour(dataWork.color);
             }}
             onMouseLeave={() => {
-              setColour(dataWork.color);
+              setColour("#fff");
             }}
           >
             <img src={dataWork.imgCard} alt="img12" />
             <figcaption>
-              <h2 className="o-span-card" style={{ color: Colour }}>
+              <h2 className="o-span-card" style={{ color: colour }}>
                 {dataWork.spanCard}
               </h2>
               <p>{dataWork.descriptionCard}</p>
