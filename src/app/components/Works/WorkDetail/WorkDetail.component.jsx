@@ -3,7 +3,7 @@ import ButtonProject from "../ButtonProject/ButtonProject.component";
 import "./WorkDetail.css";
 
 const WorkDetail = ({ dataWork }) => {
-  const [colour, setColour] = React.useState(dataWork.color);
+  const [colour, setColour] = React.useState("#fff");
   return (
     <div
       className="o-content-project"

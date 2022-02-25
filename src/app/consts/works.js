@@ -3,7 +3,7 @@ import imgProject1 from "../../assets/images/lowbeat.jpg";
 import imgProject2 from "../../assets/images/cheeseRescue.jpg";
 import imgProject3 from "../../assets/images/liliapp.jpg";
 
-const project_1 = {
+const project_0 = {
   title: "Glommy",
   siteProject: "Glommy-site",
   codeProject: "Glommy-code",
@@ -17,10 +17,10 @@ const project_1 = {
   descriptionCard: "HTML SASS SWR API-REST CUSTOM-HOOKS",
   url: "https://glommy.vercel.app/",
   imgCard: imgProject0,
-  color: "#000",
+  color: "#ffffff",
 };
 
-const project_0 = {
+const project_1 = {
   title: "Lowbeat",
   siteProject: "Lowbeat-site",
   codeProject: "Lowbeat-code",
@@ -65,10 +65,10 @@ const project_3 = {
       <span>Javascript</span>
     </>
   ),
-  descriptionCard: "HTML CSS TWITTER-API NODEJS EXPRESS",
+  descriptionCard: "HTML CSS TWITTER-API NODEJS EXPRESS QR-CODE",
   url: "https://www.youtube.com/watch?v=eXPijCKS0Ac",
   imgCard: imgProject3,
-  color: "#272727",
+  color: "#000",
 };
 
 export { project_0, project_1, project_2, project_3 };
