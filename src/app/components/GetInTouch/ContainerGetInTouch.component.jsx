@@ -23,7 +23,10 @@ const ContainerGetInTouch = ({ idPage, showPicture }) => {
         <ContainerDescription>
           <Description title={title} subtitle={subtitle} />
           <div className="o-icons-getintouch">
-            <a href="https://www.linkedin.com/in/juan-david-arango-rodr%C3%ADguez-9a769419a" target="_balnk">
+            <a
+              href="https://www.linkedin.com/in/david-arango-ro/"
+              target="_balnk"
+            >
               <img className="o-info-get" src={iconLinkedin} alt="linkedin" />
             </a>
             <a href="https://wa.me/573178822924" target="_balnk">

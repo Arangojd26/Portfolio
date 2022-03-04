@@ -93,7 +93,7 @@ const About = () => {
               davidarango.ro@gmail.com
             </a>
             <a
-              href="https://www.linkedin.com/in/juan-david-arango-rodr%C3%ADguez-9a769419a"
+              href="https://www.linkedin.com/in/david-arango-ro/"
               target="_balnk"
             >
               Linkedin

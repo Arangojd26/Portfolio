@@ -25,7 +25,7 @@ const Navbar = (props) => {
       <div className="o-wrap">
         <div className="o-icons">
           <a
-            href="https://www.linkedin.com/in/juan-david-arango-rodr%C3%ADguez-9a769419a"
+            href="https://www.linkedin.com/in/david-arango-ro/"
             target="_balnk"
           >
             <img className="o-info-navbar" src={iconLinkedin} alt="linkedin" />
